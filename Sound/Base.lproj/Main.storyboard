@@ -19,17 +19,21 @@
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <state key="normal" image="drumImage"/>
                                 <connections>
-                                    <action selector="tapDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEk-cV-4EA"/>
+                                    <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="oNt-Ak-UHz"/>
+                                    <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvo-AT-BxR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7u6-kW-UuZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="22Y-aV-xnG"/>
                             <constraint firstItem="7u6-kW-UuZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hry-UF-WgE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="drumButton" destination="7u6-kW-UuZ" id="8Jo-fP-xVZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
